@@ -1,0 +1,89 @@
+.warp {
+  width: 70%;
+  margin: 0 auto;
+}
+.warp .search-area {
+  position: relative;
+}
+.warp .search-area .search {
+  width: 416px;
+  height: 56px;
+  padding: 0 50px;
+  margin-top: 80px;
+  border-radius: 40px;
+  border: 1px solid black;
+}
+.warp .search-area i {
+  position: absolute;
+  left: 20px;
+  top: 100px;
+  font-size: 25px;
+}
+.warp ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.warp li {
+  width: 416px;
+  height: 476px;
+  margin: 40px 8px;
+  box-sizing: border-box;
+}
+.warp li .c-img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.warp li .date {
+  color: #000000;
+  font-size: 16px;
+  margin: 8px 0;
+}
+.warp li .tag {
+  font-size: 24px;
+  color: #0027D5;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.warp li .title {
+  height: 84px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 1.5;
+}
+.warp li .detial {
+  height: 48px;
+  font-size: 16px;
+  margin: 8px 0;
+  color: #4B4B4B;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  text-overflow: ellipsis;
+}
+.warp li .read {
+  padding: 8px 16px;
+  margin-top: 10px;
+  font-size: 16px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 40px;
+  border: 1px solid black;
+  color: black;
+  transition: all 0.3s ease;
+}
+.warp li .read:hover {
+  background-color: #000000;
+  color: white;
+  transition: all 0.3s ease;
+}/*# sourceMappingURL=style.css.map */
