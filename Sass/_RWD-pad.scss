@@ -1,0 +1,52 @@
+@media(max-width:768px) {
+    .warp {
+        .search-area {
+            .search {
+                width: 216px;
+                height: 36px;
+                padding: 0 40px;
+            }
+        }
+
+        .search-area i {
+            left: 10px;
+            top: 90px;
+            font-size: 20px;
+        }
+    }
+
+    .warp ul li {
+        width: 208px;
+        height: 436px;
+
+        .c-img {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 8px;
+        }
+
+        .date {
+            font-size: 14px;
+        }
+
+        .tag {
+            font-size: 16px;
+        }
+
+        .title {
+            font-size: 20px;
+        }
+
+        .detial {
+            height: 42px;
+            font-size: 14px;
+            margin: 8px 0;
+        }
+
+        .read {
+            padding: 6px 12px;
+            margin-top: 4px;
+            font-size: 14px;
+        }
+    }
+}

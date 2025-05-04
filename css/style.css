@@ -48,6 +48,100 @@ table {
   border-spacing: 0;
 }
 
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .warp .search-area .search {
+    width: 216px;
+    height: 36px;
+    padding: 0 40px;
+  }
+  .warp .search-area i {
+    left: 10px;
+    top: 90px;
+    font-size: 20px;
+  }
+  .warp ul li {
+    width: 208px;
+    height: 436px;
+  }
+  .warp ul li .c-img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 8px;
+  }
+  .warp ul li .date {
+    font-size: 14px;
+  }
+  .warp ul li .tag {
+    font-size: 16px;
+  }
+  .warp ul li .title {
+    font-size: 20px;
+  }
+  .warp ul li .detial {
+    height: 42px;
+    font-size: 14px;
+    margin: 8px 0;
+  }
+  .warp ul li .read {
+    padding: 6px 12px;
+    margin-top: 4px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  .warp .search-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .warp .search-area .search {
+    width: 216px;
+    height: 36px;
+    padding: 0 45px;
+    margin-top: 40px;
+  }
+  .warp .search-area i {
+    left: 20px;
+    top: 50px;
+    font-size: 20px;
+  }
+  .warp ul li {
+    width: 208px;
+    height: 436px;
+  }
+  .warp ul li .c-img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 8px;
+  }
+  .warp ul li .date {
+    font-size: 14px;
+  }
+  .warp ul li .tag {
+    font-size: 16px;
+  }
+  .warp ul li .title {
+    font-size: 20px;
+  }
+  .warp ul li .detial {
+    height: 42px;
+    font-size: 14px;
+    margin: 8px 0;
+  }
+  .warp ul li .read {
+    padding: 6px 12px;
+    margin-top: 4px;
+    font-size: 14px;
+  }
+}
 .warp {
   width: 70%;
   margin: 0 auto;
@@ -55,7 +149,8 @@ table {
 .warp .search-area {
   position: relative;
 }
-.warp .search-area .search {
+.warp .search {
+  max-width: 416px;
   width: 416px;
   height: 56px;
   padding: 0 50px;
@@ -63,7 +158,7 @@ table {
   border-radius: 40px;
   border: 1px solid black;
 }
-.warp .search-area i {
+.warp i {
   position: absolute;
   left: 20px;
   top: 100px;
@@ -78,9 +173,11 @@ table {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .warp li {
-  width: 416px;
+  max-width: 416px;
   height: 476px;
   margin: 40px 8px;
   -webkit-box-sizing: border-box;

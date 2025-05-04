@@ -3,3 +3,4 @@
 
 - 使用 SCSS 編輯 CSS 樣式
 - 使用 JavaScript 進行資料遍歷
+- 添加 RWD 功能 對應 375px, 768px 寬度裝置
