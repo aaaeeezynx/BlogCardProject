@@ -28,6 +28,7 @@ contentArray.forEach(item => {
     img.src = item.img;
     img.alt = item.title;
     img.className = 'c-img';
+    img.loading = 'lazy';
 
     const date = document.createElement('p');
     date.className = 'date';
