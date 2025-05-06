@@ -52,91 +52,6 @@ table {
   box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  .warp .search-area .search {
-    width: 216px;
-    height: 36px;
-    padding: 0 40px;
-  }
-  .warp .search-area i {
-    left: 10px;
-    top: 90px;
-    font-size: 20px;
-  }
-  .warp ul li {
-    width: 208px;
-    height: 436px;
-  }
-  .warp ul li .c-img {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 8px;
-  }
-  .warp ul li .date {
-    font-size: 14px;
-  }
-  .warp ul li .tag {
-    font-size: 16px;
-  }
-  .warp ul li .title {
-    font-size: 20px;
-  }
-  .warp ul li .detial {
-    height: 42px;
-    font-size: 14px;
-    margin: 8px 0;
-  }
-  .warp ul li .read {
-    padding: 6px 12px;
-    margin-top: 4px;
-    font-size: 14px;
-  }
-}
-@media (max-width: 375px) {
-  .warp .search-area {
-    display: flex;
-    justify-content: center;
-  }
-  .warp .search-area .search {
-    width: 216px;
-    height: 36px;
-    padding: 0 45px;
-    margin-top: 40px;
-  }
-  .warp .search-area i {
-    left: 20px;
-    top: 50px;
-    font-size: 20px;
-  }
-  .warp ul li {
-    width: 208px;
-    height: 436px;
-  }
-  .warp ul li .c-img {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 8px;
-  }
-  .warp ul li .date {
-    font-size: 14px;
-  }
-  .warp ul li .tag {
-    font-size: 16px;
-  }
-  .warp ul li .title {
-    font-size: 20px;
-  }
-  .warp ul li .detial {
-    height: 42px;
-    font-size: 14px;
-    margin: 8px 0;
-  }
-  .warp ul li .read {
-    padding: 6px 12px;
-    margin-top: 4px;
-    font-size: 14px;
-  }
-}
 .warp {
   width: 70%;
   margin: 0 auto;
@@ -185,11 +100,25 @@ table {
   font-size: 16px;
   margin: 8px 0;
 }
-.warp li .tag {
+.warp li .tagArea {
+  display: flex;
+}
+.warp li .tagArea .tag {
   font-size: 24px;
   color: #0027D5;
   line-height: 1.5;
   text-decoration: none;
+}
+.warp li .tagArea .hot {
+  border-radius: 40px;
+  padding: 6px 12px;
+  margin-left: 8px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: white;
+  background-color: #0027D5;
 }
 .warp li .title {
   height: 84px;
@@ -227,4 +156,81 @@ table {
   background-color: #000000;
   color: white;
   transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .warp .search {
+    width: 216px;
+    height: 36px;
+    padding: 0 40px;
+  }
+  .warp .search-area i {
+    left: 10px;
+    top: 90px;
+    font-size: 20px;
+  }
+  .warp ul li {
+    width: 245px;
+    height: 436px;
+  }
+  .warp ul li .c-img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 8px;
+  }
+  .warp ul li .date {
+    font-size: 14px;
+  }
+  .warp ul li .tagArea .hot {
+    font-size: 14px;
+    border-radius: 40px;
+    padding: 5px;
+    width: 90px;
+    height: 24px;
+    line-height: 1;
+  }
+  .warp ul li .tagArea .tag {
+    font-size: 16px;
+  }
+  .warp ul li .title {
+    font-size: 20px;
+  }
+  .warp ul li .detial {
+    height: 42px;
+    font-size: 14px;
+    margin: 8px 0;
+  }
+  .warp ul li .read {
+    padding: 6px 12px;
+    margin-top: 4px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  .warp .search-area {
+    display: flex;
+    justify-content: center;
+  }
+  .warp .search-area .search {
+    width: 216px;
+    height: 36px;
+    padding: 0 45px;
+    margin-top: 40px;
+  }
+  .warp .search-area i {
+    left: 20px;
+    top: 50px;
+    font-size: 20px;
+  }
+  .warp ul li {
+    width: 208px;
+    height: 436px;
+  }
+  .warp ul li .tagArea .hot {
+    line-height: 1.5;
+    margin: 0;
+    width: 80px;
+    height: 32px;
+    margin-left: 4px;
+  }
 }/*# sourceMappingURL=style.css.map */

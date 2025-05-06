@@ -1,6 +1,4 @@
 @import "_reset.scss";
-@import "_RWD-pad.scss";
-@import "_RWD-phone.scss";
 
 .warp {
     width: 70%;
@@ -9,23 +7,24 @@
     .search-area {
         position: relative;
     }
-        .search {
-            max-width: 416px;
-            width: 416px;
-            height: 56px;
-            padding: 0 50px;
-            margin-top: 80px;
-            border-radius: 40px;
-            border: 1px solid black;
-        }
 
-        i {
-            position: absolute;
-            left: 20px;
-            top: 100px;
-            font-size: 25px;
-        }
-        
+    .search {
+        max-width: 416px;
+        width: 416px;
+        height: 56px;
+        padding: 0 50px;
+        margin-top: 80px;
+        border-radius: 40px;
+        border: 1px solid black;
+    }
+
+    i {
+        position: absolute;
+        left: 20px;
+        top: 100px;
+        font-size: 25px;
+    }
+
 
     ul {
         list-style: none;
@@ -55,11 +54,27 @@
             margin: 8px 0;
         }
 
-        .tag {
-            font-size: 24px;
-            color: #0027D5;
-            line-height: 1.5;
-            text-decoration: none;
+        .tagArea {
+            display: flex;
+
+            .tag {
+                font-size: 24px;
+                color: #0027D5;
+                line-height: 1.5;
+                text-decoration: none;
+            }
+
+            .hot {
+                border-radius: 40px;
+                padding: 6px 12px;
+                margin-left: 8px;
+                text-align: center;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 1.5;
+                color: white;
+                background-color: #0027D5;
+            }
         }
 
         .title {
@@ -104,3 +119,6 @@
         }
     }
 }
+
+@import "_RWD-pad.scss";
+@import "_RWD-phone.scss";
