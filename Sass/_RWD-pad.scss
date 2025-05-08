@@ -1,5 +1,8 @@
 @media(max-width:768px) {
     .warp {
+        .search-area{
+            padding: 0 10%;
+        }
         .search {
             width: 216px;
             height: 36px;
@@ -7,7 +10,7 @@
         }
 
         .search-area i {
-            left: 10px;
+            left: 90px;
             top: 90px;
             font-size: 20px;
         }
@@ -15,7 +18,6 @@
 
     .warp ul li {
         width: 245px;
-        height: 436px;
 
         .c-img {
             width: 100%;
@@ -47,9 +49,7 @@
         }
 
         .detial {
-            height: 42px;
             font-size: 14px;
-            margin: 8px 0;
         }
 
         .read {

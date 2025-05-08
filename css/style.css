@@ -17,6 +17,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-decoration: none;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -26,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.5;
 }
 
 ol, ul {
@@ -48,14 +49,19 @@ table {
   border-spacing: 0;
 }
 
+img {
+  vertical-align: middle;
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .warp {
-  width: 70%;
+  max-width: 1296px;
   margin: 0 auto;
+  text-decoration: none;
 }
 .warp .search-area {
   position: relative;
@@ -89,58 +95,47 @@ table {
 }
 .warp li {
   max-width: 416px;
-  height: 476px;
   margin: 40px 8px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.warp li .c-img {
+.warp .c-img {
   width: 100%;
   height: 200px;
   margin-bottom: 16px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.warp li .date {
+.warp .date {
   color: #000000;
-  font-size: 16px;
   margin: 8px 0;
 }
-.warp li .tagArea {
+.warp .tagArea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.warp li .tagArea .tag {
+.warp .tagArea .tag {
   font-size: 24px;
   color: #0027D5;
-  line-height: 1.5;
-  text-decoration: none;
 }
-.warp li .tagArea .hot {
+.warp .tagArea .hot {
   border-radius: 40px;
   padding: 6px 12px;
   margin-left: 8px;
   text-align: center;
-  font-size: 16px;
   font-weight: bold;
-  line-height: 1.5;
   color: white;
   background-color: #0027D5;
 }
-.warp li .title {
-  height: 84px;
+.warp .title {
   font-size: 28px;
   font-weight: bold;
   color: #000000;
-  line-height: 1.5;
 }
-.warp li .detial {
-  height: 48px;
-  font-size: 16px;
+.warp .detial {
   margin: 8px 0;
   color: #4B4B4B;
-  line-height: 1.5;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
@@ -149,19 +144,17 @@ table {
   line-clamp: 2;
   text-overflow: ellipsis;
 }
-.warp li .read {
+.warp .read {
   padding: 8px 16px;
   margin-top: 10px;
-  font-size: 16px;
   display: inline-block;
-  text-decoration: none;
   border-radius: 40px;
   border: 1px solid black;
   color: black;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.warp li .read:hover {
+.warp .read:hover {
   background-color: #000000;
   color: white;
   -webkit-transition: all 0.3s ease;
@@ -169,19 +162,21 @@ table {
 }
 
 @media (max-width: 768px) {
+  .warp .search-area {
+    padding: 0 10%;
+  }
   .warp .search {
     width: 216px;
     height: 36px;
     padding: 0 40px;
   }
   .warp .search-area i {
-    left: 10px;
+    left: 90px;
     top: 90px;
     font-size: 20px;
   }
   .warp ul li {
     width: 245px;
-    height: 436px;
   }
   .warp ul li .c-img {
     width: 100%;
@@ -206,9 +201,7 @@ table {
     font-size: 20px;
   }
   .warp ul li .detial {
-    height: 42px;
     font-size: 14px;
-    margin: 8px 0;
   }
   .warp ul li .read {
     padding: 6px 12px;
@@ -232,13 +225,12 @@ table {
     margin-top: 40px;
   }
   .warp .search-area i {
-    left: 20px;
+    left: 75px;
     top: 50px;
     font-size: 20px;
   }
   .warp ul li {
     width: 208px;
-    height: 436px;
   }
   .warp ul li .tagArea .hot {
     line-height: 1.5;
